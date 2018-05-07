@@ -16,6 +16,7 @@ app.get("/:operation/:first/:second", function (req, res) {
 
     switch (operation) {
         case "add":            
+            // instead of to string, we can do " " + (a + b)
             res.send((first + second).toString()); // remember to convert to string before sending it back to front end !!!
             break;
     }
